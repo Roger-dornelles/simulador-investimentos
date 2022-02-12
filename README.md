@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Simulador de Investimento
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Instalação
 
 ## Available Scripts
 
