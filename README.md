@@ -77,4 +77,4 @@
 :x: Grafico: grafico em alguns dispositivos não ficara disponivel devido ao tamanho de tela, com telas menores o grafico fica todo distorcido devido a quantidade de informações contidos 
 
 
-#### Sobre os teste e docker estou em busca de adquirir os conhecimentos necessario para poder executar futuramente.
+#### :warning: Sobre os teste e docker estou em busca de adquirir os conhecimentos necessario para poder executar futuramente.
