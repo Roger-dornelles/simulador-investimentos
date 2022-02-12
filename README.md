@@ -1,6 +1,33 @@
 # Simulador de Investimento
 
-# Instalação
+## :white_check_mark: Instalação
+
+No prompt de comando(CMD) digitar :point_right: `git clone `
+
+Vai criar uma pasta com o projeto, dentro da pasta com o prompt de comando(CMD) digitar :point_right: npm `npm install` ou yarn `yarn add`
+
+( para entrar na pasta digitar no prompt de comando(CMD) digitar :point_right: `cd nome da pasta criada`  (vai entrar dentro da pasta) )
+
+Apos fazer os comandos abrir no vsCode ou IDE que desejar
+
+( para abrir no vsCode no prompt de comando(CMD) dentro da pasta digitar :point_right: `code .` )
+
+Par iniciar o projeto dentro do vsCode no terminal do vsCode digitar :point_right: ` npm start`
+
+Vai iniciar em [http://localhost:3006](http://localhost:3006)
+
+### `Para iniciar o json-server`
+
+No prompt de comando(CMD) dentro da pasta do projeto digitar :point_right: `cd desafio-fake-api`
+
+Vai entrar dentro da pasta da api fake.
+
+No prmpt de comando(CMD) digitar :point_right: `npx json-server db.json`
+
+Vai iniciar o servidor, se não iniciar após o comando digitar este comando :point_right: `npm install`  e após :point_right: `npx json-server db.json`
+
+Vai iniciar em [http://localhost:3000](http://localhost:3000)
+
 
 ## Available Scripts
 
