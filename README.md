@@ -2,96 +2,76 @@
 
 ## :white_check_mark: Instalação
 
-No prompt de comando(CMD) digitar :point_right: `git clone `
+:heavy_check_mark: No prompt de comando(CMD) digitar :point_right: `git clone https://github.com/Roger-dornelles/simulador-investimentos `
 
-Vai criar uma pasta com o projeto, dentro da pasta com o prompt de comando(CMD) digitar :point_right: npm `npm install` ou yarn `yarn add`
+:heavy_check_mark: Vai criar uma pasta com o projeto, dentro da pasta com o prompt de comando(CMD) digitar :point_right: npm `npm install` ou yarn `yarn add`
 
-( para entrar na pasta digitar no prompt de comando(CMD) digitar :point_right: `cd nome da pasta criada`  (vai entrar dentro da pasta) )
+:question: ( para entrar na pasta digitar no prompt de comando(CMD) digitar :point_right: `cd nome da pasta criada`  (vai entrar dentro da pasta) )
 
-Apos fazer os comandos abrir no vsCode ou IDE que desejar
+:heavy_check_mark: Apos fazer os comandos abrir no vsCode ou IDE que desejar
 
-( para abrir no vsCode no prompt de comando(CMD) dentro da pasta digitar :point_right: `code .` )
+:question: ( para abrir no vsCode no prompt de comando(CMD) dentro da pasta do projeto digitar :point_right: `code .` )
 
-Par iniciar o projeto dentro do vsCode no terminal do vsCode digitar :point_right: ` npm start`
+:heavy_check_mark: Para iniciar o projeto dentro do vsCode no terminal do vsCode digitar :point_right: ` npm start`
 
-Vai iniciar em [http://localhost:3006](http://localhost:3006)
+:heavy_check_mark:Para iniciar o projeto no prompt de comando(CMD) dentro da pasta do projeto digitar :point_right: `npm start`
+
+:heavy_check_mark: Vai iniciar em [http://localhost:3006](http://localhost:3006)
 
 ### `Para iniciar o json-server`
 
-No prompt de comando(CMD) dentro da pasta do projeto digitar :point_right: `cd desafio-fake-api`
+:green_circle: Requisitos 
 
-Vai entrar dentro da pasta da api fake.
+. NPM
 
-No prmpt de comando(CMD) digitar :point_right: `npx json-server db.json`
+. NODE.JS
 
-Vai iniciar o servidor, se não iniciar após o comando digitar este comando :point_right: `npm install`  e após :point_right: `npx json-server db.json`
+:heavy_check_mark: No prompt de comando(CMD) dentro da pasta do projeto digitar :point_right: `cd desafio-fake-api`
 
-Vai iniciar em [http://localhost:3000](http://localhost:3000)
+:heavy_check_mark: Vai entrar dentro da pasta da api fake.
+
+:heavy_check_mark: No prompt de comando(CMD) digitar :point_right: `npx json-server db.json`
+
+:heavy_check_mark: Vai iniciar o servidor, se não iniciar após o comando digitar este comando :point_right: `npm install`  e após :point_right: `npx json-server db.json`
+
+:heavy_check_mark: Vai iniciar em [http://localhost:3000](http://localhost:3000)
+
+### :red_square: Api retornara valores fixos independente dos valores digitados pelo usuario
 
 
-## Available Scripts
+## :white_check_mark: Descrição do projeto.
 
-In the project directory, you can run:
+:heavy_check_mark: Criação do projeto de simulação de investimento, contara com uma tela inicial com um formulario para preencher com seus respectivos valores iniciais.
 
-### `npm start`
+:heavy_check_mark: Para poder fazer a simulação o usuario tera que preencher todos os campos disponiveis, e após o preenchimento ao clicar em SIMULAR vai aparecer uma outra tela com as informações referentes os dados preenchidos.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+:heavy_check_mark: Caso o usuario digitar algum campo com uma informação errada ele podera digitar novamente a informação correta antes de clicar em SIMULAR, se o usuario quiser digitar todos os campos novamente so clicar em LIMPAR CAMPOS
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+:heavy_check_mark: A tela onde aparecera as informações de investimento contara com seus valores atualizados e tambem contara com um grafico.
 
-### `npm test`
+#### :red_square: Informações sobre visualização do grafico em dispositivos moveis não ficara visivel em alguns dispositivos devido ao tamanho de tela.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## :white_check_mark: Tecnologia usada
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+:heavy_check_mark: React.js
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+:heavy_check_mark: Remask ( mascara para os campos input )
 
-### `npm run eject`
+:heavy_check_mark: react-google-charts ( grafico )
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### :heavy_check_mark: Tecnologias usadas no desenvolver.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+:heavy_check_mark: Estou usando o React.js para executar o projeto pois é a tecnologia que mais estou usando para criação dos meus projetos, juntamente com o Remask mascara para os campos input onde posso definir qual o tipo de dados aceito nos campos e como fica a formatação dos valores
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+:heavy_check_mark: Responsividade foi aplicada conforme os layouts disponiveis atraves do google chrome
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+### `Informações Adicionais `
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+:x: Teste:  Não foram aplicados testes no desenvolver o projeto, pois não tenho conhecimento sobre teste.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+:x: Docker: Não foi aplicado containerização pois tambem não tenho cohecimento.
+ 
+:x: Grafico: grafico em alguns dispositivos não ficara disponivel devido ao tamanho de tela, com telas menores o grafico fica todo distorcido devido a quantidade de informações contidos 
