@@ -1,13 +1,468 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+
+}
+/* estilizaçõ do Header*/
+header{
+  width: 100%;
+  height:90px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #EFEFEF;
+  flex-direction: column;
+}
+.menu-search{
+  display: flex;
+  justify-content:space-around;
+  width: 100%;
+  padding: 10px 0;
+}
+.icons{
+  display: flex;
+  align-items:center;
+  font-size:35px;
+  width: 180px;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.icons svg{
+  padding: 0 5px;
+  color: #5e5e5e;
+  font-weight: bold;
+  padding: 0 8px;
+  cursor: pointer;
+}
+
+.icons svg:last-child{
+  font-size:39px;
+}
+
+.search-input{
+  display: flex;
+  flex:1;
+  justify-content: center;
+  align-items:center;
+  margin-left:90px;
+}
+
+.search-input input{
+  width: 60%;
+  outline: none;
+  border: none;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  height:30px;
+  text-align: center;
+  font-size: 18px;
+  padding-left: 22px;
+}
+
+.search-input div{
+  width: 35%;
+  
+}
+.search-input input:last-child{
+  margin-left:90px;
+}
+
+.search-input svg{
+  position: absolute;
+  font-size:25px;
+  color: #757575;
+  margin-left:90px;
+  cursor: pointer;
+}
+/* ---------------------------------------------------------------------------------- */
+/*  estilização da section */
+.section{
+  width: 90%;
+  min-height: calc(100vh - (90px + 30px));
+  margin-top:30px;
+  background-color: #EFEFEF;
+}
+.section h2{
+  text-align: center;
+  padding-top: 30px;
+}
+
+.simulator{
+  width: 99%;
+  display: flex;
+}
+.simulator span{
+  width: 50%;
+}
+
+/* estilização campos de simulação/ formularios */
+.simulator-one{
+  width:50%;
+  display: flex;
+  flex-direction: column;
+}
+.forms{
+  display: flex;
+  width: 100%;
+}
+.description-one{
+  width: 90%;
+
+}
+.description-one p{
+  padding-top:15px;
+}
+
+.error, .warning{
+  width: 50%;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+}
+
+.buttons-description{
+  width: 100%;
+}
+
+.buttons-description button{
+  margin: 10px 0;
+  font-size:16px;
+  width:49%;
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  border:1px solid #757575;
+  border-radius:0;
+  -webkit-border-radius:0;
+  -moz-border-radius:0;
+  -ms-border-radius:0;
+  -o-border-radius:0;
+  font-weight: normal;
+}
+
+.buttons-description svg, .buttons-description-two svg{
+  font-size: 15px;
+  margin-left: -15px;
+  color: #fff;
+  position: absolute;
+}
+
+.buttons-description-two button{
+  width:calc(99% / 3);
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  border:1px solid #757575;
+  margin: 10px 0;
+  font-size:16px;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+
+}
+
+
+button:first-child{
+  border-top-left-radius: 7px 7px;
+  border-bottom-left-radius: 7px 7px;
+}
+
+button:last-child{
+  border-top-right-radius: 7px 7px;
+  border-bottom-right-radius: 7px 7px;
+}
+
+form{
+  width: 99%;
+  display:flex;
+  margin: 30px 0;
+  position: relative;
+}
+
+form label{
+  width:100%;
+}
+
+form input{
+  width: 99%;
+  border:0;
+  background-color: #f0f0f0;
+  border-bottom: 1px solid #757575 ;
+  margin-top: 20px;
+  margin-bottom:35px;
+  outline: none;
+  font-size: 17px;
+  
+}
+
+form span{
+  display: flex;
+  margin-top: -32px;
+  position: absolute;
+  min-width: 90%;
+}
+
+.buttons{
+  width:100%;
+  display: flex;
+  justify-content:space-around;
+  padding:10px;
+
+}
+
+.buttons button{
+  width:48%;
+  padding:10px;
+  font-size:17px;
+  cursor: pointer;
+  font-weight: bold;
+  border: 1px solid #757575;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+}
+.description-two{
+  width: 90%;
+
+}
+.description-two p{
+  padding-top: 38px;
+}
+/* ----------------------------------------------------------------------- */
+
+/* estilização campos resultado da simulação */
+.simulator-two{
+  width:50%;
+}
+
+.container{
+  width:100%;
+}
+.itens{
+  width:100%;
+  text-align: center;
+}
+
+.itens h3{
+  text-align:left;
+  margin-top: 30px;
+}
+
+.container-itens{
+  width:100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.itens-description{
+  background-color:#fff;
+  margin: 10px ;
+  justify-content: space-around;
+  padding: 20px 0;
+  width:calc((100% / 3) - 25px);
+  box-shadow: 0px 0px 3px 2px #cccc;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.itens-description span{
+  padding-top: 10px;
+  font-weight:400;
+  padding-top: 20px;
+}
+/* ------------------------------------------------------------------- */
+
+@media (max-width: 1280px){
+
+  .section{
+    width: 100%;
+  }
+
+  .simulator{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .simulator span{
+    width: 99%;
+  }
+  .simulator-one{
+    display: flex;
+    width: 100%;
+
+  }
+  .buttons{
+    width: 100%;
+  }
+  .simulator-two{
+    display: flex;
+    width: 100%;
+  }
+
+  .itens{
+    width: 50%;
+  }
+
+  .itens h3{
+    text-align:center;
+  }
+
+  .itens-description{
+    width: 80%;
+    margin: 5px auto;
+  }
+
+  
+}
+
+@media (max-width:1000px){
+
+  .search-input{
+    margin-left:0px;
+  }
+  .search-input input:last-child{
+    margin-left:0px;
+  }
+  
+  .search-input svg{
+    margin-left:0px;
+  }
+
+  .buttons-description svg, .buttons-description-two svg{
+    margin-right: 0;
+    position: absolute;
+    margin-left:-14px;
+  }
+
+  .container{
+    width: 98%;
+  }
+  .itens{
+    width: 90%;
+  }
+}
+
+@media(max-width:795px){
+
+  .search-input {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .search-input input{
+    width: 40%;
+  }
+  
+  .search-input div > input{
+    width: 95%;
+    
+  }
+  header{
+    display: flex;
+    justify-content:center;
+  }
+  .icons{
+    display: none;
+    margin-left:10px;
+  }
+  .search-input{
+    display: flex;
+    flex:1;
+    justify-content: center;
+    align-items:center;
+    margin-left:0px;
+
+  }
+  .search-input input:last-child{
+    margin-left:0px;
+  }
+
+  .section{
+    width: 100%;
+  }
+
+  .simulator{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .simulator span{
+    width: 99%;
+  }
+  .simulator-one{
+    width:95%;
+    display: flex;
+  }
+  .forms{
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+  }
+
+  .buttons-description svg, .buttons-description-two svg{
+    margin-right: 0;
+    position: absolute;
+    margin-left:-14px;
+  }
+
+  .buttons{
+    width: 98%;
+  }
+
+  .description-one{
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .simulator-two{
+    width:90%;
+    display: flex;
+    justify-content:center;
+  }
+
+  .description-two{
+    width: 100%;
+    margin-top: -70px;
+  }
+
+  .container{
+    width: 98%;
+    margin-bottom: 20px;
+  }
+  .itens{
+    width: 100%;
+  }
+}
+
+@media(max-width:450px){
+
+  .graphic{
+    display: none;
+  }
+}
+
+@media (max-width: 281px){
+  .buttons{
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+    margin-top: -25px;
+  }
+
+  .buttons button{
+    width: 98%;
+    margin: 5px auto;
+  }
+
 }
